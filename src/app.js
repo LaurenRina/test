@@ -2,8 +2,11 @@ let index;
 
 function generateList(response) {
   let list = document.querySelector("#list");
-  let listData = response.data;
+  if (list === null) {
+    return;
+  }
 
+  let listData = response.data;
   let listHTML = `<div>`;
   listData.forEach(function (jobData) {
     listHTML =
@@ -65,8 +68,11 @@ function generateList(response) {
 
 function showDetails(response) {
   let job = document.querySelector("#job");
-  let jobData = response.data[9];
+  if (job === null) {
+    return;
+  }
 
+  let jobData = response.data[9];
   let jobDescriptions = jobData.description.split("\n ");
   let jobCompensations = jobDescriptions[5].split("\n\t ");
   let jobCompensation = jobCompensations[1].split(". ");
