@@ -1,3 +1,5 @@
+let index;
+
 function generateList(response) {
   let list = document.querySelector("#list");
   let listData = response.data;
@@ -52,7 +54,6 @@ function generateList(response) {
   listHTML = listHTML + `</div>`;
   if (list && listHTML) list.innerHTML = listHTML;
 
-  let index;
   let titleLinks = document.querySelectorAll("#title-link");
   titleLinks.forEach(function getTitle(titleLink) {
     titleLink.addEventListener("click", function getIndex() {
