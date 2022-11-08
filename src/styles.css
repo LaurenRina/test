@@ -1,0 +1,358 @@
+body {
+  font-family: Proxima Nova, sans-serif;
+  color: #3a4562;
+}
+h1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 20px;
+  line-height: 25px;
+}
+.job-bar p {
+  color: rgba(56, 65, 93, 0.355988);
+  font-size: 16px;
+  line-height: 25px;
+}
+.job-details p,
+.job-details li,
+.location p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+.additionalInfo p {
+  margin: 10px auto;
+}
+.light-text {
+  color: rgba(56, 65, 93, 0.355988);
+}
+.pagination p {
+  color: #70778b;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  word-spacing: 8px;
+  margin: auto;
+}
+.pagination i {
+  color: rgba(56, 65, 93, 0.355988);
+  font-size: 18px;
+  position: relative;
+  bottom: 3px;
+}
+.vert-left {
+  color: rgba(56, 65, 93, 0.355988);
+  font-size: 34px;
+  font-weight: lighter;
+  position: relative;
+  top: 2px;
+  padding-left: 25px;
+  padding-right: 45px;
+}
+.vert-right {
+  color: rgba(56, 65, 93, 0.355988);
+  font-size: 34px;
+  font-weight: lighter;
+  position: relative;
+  top: 2px;
+  padding-left: 45px;
+  padding-right: 25px;
+}
+a {
+  color: #3a4562;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+}
+a:hover {
+  color: #3a4562;
+  text-decoration: underline;
+}
+ul {
+  padding: 0px;
+  list-style-type: square;
+}
+i {
+  color: #70778b;
+  font-size: 20px;
+  line-height: 20px;
+}
+button {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 18px 30px;
+  margin: 18px auto;
+}
+.button-apply {
+  color: #ffffff;
+  background: #384564;
+  border: #384564;
+}
+.button-return {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #384564;
+  background: #e4e5ea;
+  border: #e4e5ea;
+  border-radius: 8px;
+  padding: 18px 30px;
+  position: relative;
+  right: 49px;
+}
+.button-return i {
+  color: #384564;
+  font-size: 18px;
+  line-height: 18px;
+  padding-right: 16px;
+  position: relative;
+  top: 2px;
+}
+.return {
+  margin-top: 89px;
+}
+header,
+header h2,
+header p {
+  padding: 0px;
+  margin: 0px;
+}
+header i {
+  padding: 0px 16px;
+}
+.header-right {
+  text-align: right;
+  position: relative;
+  top: 10px;
+}
+.list {
+  background: #e6e9f2;
+}
+.container-fluid {
+  display: block;
+  padding: 20px 0px;
+  margin: auto;
+}
+.job-bar {
+  display: block;
+  background: #ffffff;
+  max-width: 85%;
+  height: 164px;
+  border-radius: 8px;
+  padding: 24px 16px;
+  margin: 8px auto;
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.content {
+  display: block;
+  padding: 0px 16px;
+}
+.logo {
+  width: 111px;
+  padding-right: 10px;
+  padding-left: 16px;
+}
+.icon {
+  width: 85px;
+  height: 85px;
+  border-radius: 42px;
+}
+.info {
+  text-align: left;
+  padding: 0px 16px;
+}
+.name {
+  margin-bottom: 10px;
+}
+.frame {
+  display: block;
+  text-align: right;
+  padding-right: 16px;
+  padding-left: 0px;
+}
+.updated {
+  position: relative;
+  bottom: -66px;
+  margin: auto;
+}
+.pagination {
+  display: block;
+  background: #ffffff;
+  max-width: 515px;
+  height: 52px;
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin: 49px auto;
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.job-details {
+  display: block;
+  max-width: 80%;
+  padding: 36px 16px;
+  margin: auto;
+}
+.map {
+  position: relative;
+  padding-left: 45px;
+}
+.job-map {
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  top: 150px;
+}
+.location {
+  color: #ffffff;
+  background: #3a4562;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin-left: 45px;
+  margin-right: 15px;
+}
+.job-content {
+  padding-right: 45px;
+}
+.top {
+  margin-top: 16px;
+}
+.title {
+  padding-right: 60px;
+}
+.fw-bold {
+  margin-top: 39px;
+}
+.picture {
+  max-height: 130px;
+  width: 200px;
+  border-radius: 8px;
+  padding: 10px 8px;
+}
+.job-employment,
+.job-benefits {
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  padding: 13px 0px;
+  width: 222px;
+  height: 50px;
+  margin: auto;
+}
+.job-employment {
+  color: #55699e;
+  background: rgba(161, 177, 219, 0.317343);
+  border: 1px solid rgba(85, 105, 158, 0.3);
+}
+.job-benefits {
+  color: #988b49;
+  background: rgba(255, 207, 0, 0.15);
+  border: 1px solid #ffcf00;
+}
+@media screen and (max-width: 576px) {
+  .updated {
+    text-align: right;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+    top: 0px;
+    margin: auto;
+  }
+  .content {
+    padding: 10px 16px;
+  }
+  .job-bar h3 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 100;
+  }
+  .job-bar {
+    max-width: 95%;
+    height: 194px;
+    padding: 13px 16px;
+  }
+  .logo {
+    width: 81px;
+    padding-right: 0px;
+    padding-left: 16px;
+  }
+  .icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 32px;
+  }
+  .info {
+    text-align: left;
+    padding: 0px 16px;
+    max-width: 299px;
+  }
+  .vert-left {
+    padding-left: 8px;
+    padding-right: 16px;
+  }
+  .vert-right {
+    padding-left: 16px;
+    padding-right: 8px;
+  }
+  .job-employment,
+  .job-benefits {
+    width: 122px;
+    height: 50px;
+  }
+  .job-details {
+    max-width: 100%;
+    padding: 0px 16px;
+  }
+  .job-content {
+    padding-right: 16px;
+  }
+  .top {
+    padding-top: 12px;
+  }
+  .light-text {
+    padding-top: 16px;
+  }
+  .brutto {
+    margin-bottom: 8px;
+  }
+  .salary-right {
+    text-align: right;
+    padding-right: 0px;
+    padding-bottom: 8px;
+    margin-right: -15px;
+  }
+  ul {
+    padding: 24px;
+    list-style-type: square;
+  }
+  .map {
+    padding-left: 15px;
+  }
+  .job-map {
+    border-radius: 8px;
+    padding-bottom: 39px;
+  }
+  .location {
+    margin-left: 15px;
+  }
+}
