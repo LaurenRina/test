@@ -9,9 +9,7 @@ function generateList(response) {
   let listData = response.data;
   let listHTML = `<div>`;
   listData.forEach(function (jobData) {
-    listHTML =
-      listHTML +
-      `<div class="job-bar">
+    listHTML += `<div class="job-bar">
       <p class="d-block d-md-none updated">Posted <span>${jobData.updatedAt.slice(
         0,
         10
@@ -54,7 +52,7 @@ function generateList(response) {
         </div>
       </div>`;
   });
-  listHTML = listHTML + `</div>`;
+  listHTML += `</div>`;
   if (list && listHTML) list.innerHTML = listHTML;
 
   let titleLinks = document.querySelectorAll("#title-link");
@@ -84,33 +82,26 @@ function showDetails(response) {
   let jobPictures = jobData.pictures;
   let picturesHTML = `<div class="d-inline">`;
   jobPictures.forEach(function (jobPicture) {
-    picturesHTML =
-      picturesHTML + `<img src="${jobPicture}" alt="" class="picture" />`;
+    picturesHTML += `<img src="${jobPicture}" alt="" class="picture" />`;
   });
-  picturesHTML = picturesHTML + `</div>`;
+  picturesHTML += `</div>`;
 
   let jobEmploymentTypes = jobData.employment_type;
   let employmentTypesHTML = `<span>`;
   jobEmploymentTypes.forEach(function (employmentType) {
-    employmentTypesHTML =
-      employmentTypesHTML +
-      `<p class="d-inline-block text-truncate m-1 job-employment">${employmentType}</p>`;
+    employmentTypesHTML += `<p class="d-inline-block text-truncate m-1 job-employment">${employmentType}</p>`;
   });
   employmentTypesHTML = employmentTypesHTML + `</span>`;
 
   let jobBenefits = jobData.benefits;
   let benefitsHTML = `<div>`;
   jobBenefits.forEach(function (benefit) {
-    benefitsHTML =
-      benefitsHTML +
-      `<p class="d-inline-block text-truncate m-1 job-benefits" >${benefit}</p>`;
+    benefitsHTML += `<p class="d-inline-block text-truncate m-1 job-benefits" >${benefit}</p>`;
   });
   benefitsHTML = benefitsHTML + `</div>`;
 
   let jobHTML = `<div>`;
-  jobHTML =
-    jobHTML +
-    `<div  class="job-details">
+  jobHTML += `<div  class="job-details">
             <div class="row">
 		          <div class="col-md-8 job-content">
 		            <header class="row">
@@ -212,7 +203,7 @@ function showDetails(response) {
               </div>
             </div>
 	      </div>`;
-  jobHTML = jobHTML + `</div>`;
+  jobHTML += `</div>`;
   if (job && jobHTML) job.innerHTML = jobHTML;
 }
 
