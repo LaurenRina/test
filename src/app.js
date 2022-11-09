@@ -28,7 +28,7 @@ function generateList(response) {
               </div>
               <div class="col-md-10 info">
                 <h3>
-                <a href="details%20.html" target="_blanc" class="d-none d-md-block" id="title-link">${
+                <a href="details%20.html" class="d-none d-md-block" id="title-link">${
                   jobData.title
                 }</a>
                 <a href="details%20.html" class="d-block d-md-none" id="title-link">${jobData.title.slice(
