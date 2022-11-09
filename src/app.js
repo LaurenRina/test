@@ -1,4 +1,4 @@
-let index;
+var index;
 
 function generateList(response) {
   let list = document.querySelector("#list");
@@ -59,8 +59,11 @@ function generateList(response) {
 
   let titleLinks = document.querySelectorAll("#title-link");
   titleLinks.forEach(function getTitle(titleLink) {
-    titleLink.addEventListener("click", function getIndex() {
-      index = listData.findIndex((element) => element.title === this.innerHTML);
+    titleLink.addEventListener("click", function getIndex(e) {
+      index = listData.findIndex(
+        (element) => ~element.title.indexOf(this.innerHTML)
+      );
+      localStorage.setItem("selectedJobIndex", index);
       return index;
     });
   });
@@ -72,7 +75,8 @@ function showDetails(response) {
     return;
   }
 
-  let jobData = response.data[9];
+  let index = localStorage.getItem("selectedJobIndex");
+  let jobData = response.data[index];
   let jobDescriptions = jobData.description.split("\n ");
   let jobCompensations = jobDescriptions[5].split("\n\t ");
   let jobCompensation = jobCompensations[1].split(". ");
